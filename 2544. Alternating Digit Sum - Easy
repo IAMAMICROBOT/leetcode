@@ -1,0 +1,11 @@
+class Solution:
+    def alternateDigitSum(self, n: int) -> int:
+        res=0
+        num=str(n)
+        for i in range(len(num)):
+            if (i%2)==0:
+                res+=int(num[i])
+            else:
+                res-=int((num[i]))
+        return res
+        
