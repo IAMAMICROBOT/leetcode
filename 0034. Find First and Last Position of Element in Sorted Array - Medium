@@ -1,0 +1,9 @@
+class Solution:
+    def searchRange(self, nums: List[int], target: int) -> List[int]:
+        ind=[]
+        for i in range(len(nums)):
+            if target in nums and nums[i]==target:
+                ind.append(i)
+        if ind==[]:
+            return [-1,-1]
+        return([ind[0],ind[len(ind)-1]])
